@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/nirvana.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*\\.(mp3|glb|pdf))",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}
